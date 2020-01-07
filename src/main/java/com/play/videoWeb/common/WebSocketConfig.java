@@ -2,6 +2,7 @@ package com.play.videoWeb.common;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.stereotype.Component;
 import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
@@ -13,6 +14,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
  */
 @Configurable
 @EnableWebSocketMessageBroker
+@Component
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 
